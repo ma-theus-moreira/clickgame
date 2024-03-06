@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de clicar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <select name="tempo" onchange="escolheu()" id="selec">
+        <option value="5000" selected>5s</option>
+        <option value="10000">10s</option>
+        <option value="15000">15s</option>
+        <option value="30000">30s</option>
+    </select>
+    <div class="timertxt">Timer: 5s</div>
+    
+    
+    <!-- onclick="btn()"  -->
+    <div class="painelplay play">
+        <div>
+            <p id="placar"></p>
+        </div>
+        <div id="record"> </div>
+        
+        <div></div>
+        <button class="btn_play" onclick="play()">JOGAR</button>
+    </div>
+    <div  class="tela"> 
+        <button onclick="btn(0)" class="btn btn_one"></button>
+        <button onclick="btn(1)" class="btn btn_two"></button>
+        <button onclick="btn(2)" class="btn btn_three"></button>
+    </div>
+<div onclick="mute()" class="audiopainel">
+    <audio class="audio" src="midia/song.mp3"></audio>
+    <img  class="audioimg" src="midia/muted.png" alt="">
+</div>    
+    
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
